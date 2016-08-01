@@ -1,0 +1,157 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding: 40px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  float: right;
+  width: 340px;
+}
+
+.nav-pills li a {
+  color: #d8192f;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d8192f;
+  margin-left: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.nav-pills li.active a:hover{
+  background-color: #d8192f;
+}
+
+.nav-pills li.active a, 
+.section .btn:hover, 
+.nav-pills li a:hover {
+  background-color:rgba(216,25,47,1); 
+  box-shadow:0 2px 4px rgba(0,0,0,.5); 
+  color:#fff; 
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 500px;
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 25px;
+  margin-bottom: 0;
+}
+
+.jumbotron h2:first-child {
+  margin:120px 0 0;
+}
+.jumbotron h2 {
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  font-size: 60px;
+  margin: 0;
+}
+
+/* Banner */
+.banner, .supporting {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.banner {
+  background-color:#36343f;
+  height:180px; 
+  color: #fff;
+}
+.banner h3 {
+  margin: 0;
+  font-size: 30px;
+  padding: 0;
+}
+
+.banner .btn {
+  background-color: rgb(135, 38, 55);
+  border: 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.section .h3 {
+    padding-top: 30px;
+}
+
+.section .page-header h3 {
+  text-align: center;
+  font-size: 30px;
+  padding: 40px 0 10px;
+}
+
+.section h4 {
+    text-align: center;
+    color: #d8192f;
+    padding-top: 0;
+    margin: 30px 0 20px;
+    font-size: 20px;
+}
+
+.section ul {
+    text-align: center;
+    list-style: none;
+    margin-top: 10px;
+    padding: 0 0 80px;
+}
+
+.footer {
+    background-color: #eee;
+    padding: 40px 0 70px 0px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #d8192f;
+}
+.footer .keep_left {
+    text-align: center;
+}
+.footer .keep_center {
+    text-align: center;
+}
+
+.footer .keep_right {
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 680px) {
+  .header h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .nav {
+    float: none;
+    margin: 0 auto;
+  }
+  .banner {
+    height: 220px;
+  }
+
+  .nav-pills li:first-child a  {
+    margin-left: 0;
+  }
+}
